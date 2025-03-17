@@ -11,12 +11,13 @@
     <!-- CSS interno -->
     <style>
         body{
-            background-color: rgb(230, 173, 206);
+            background-color: rgb(255, 172, 200);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            font-family: 'Times New Roman', Times, serif;
         }
 
         .container{
@@ -24,6 +25,50 @@
             justify-content: center;
             align-items: center;
             height: 100%;
+        }
+
+        .custom-form{
+            background-color: rgb(255, 118, 164);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0,0 0.1);
+            max-width: 440px;
+            width: 100%;
+        }
+
+        .fom-label{
+            color: #4a4a4a;
+            font-weight: 500;
+        }
+
+        .custom-icon{
+            background-color: rgb(255, 183, 207);
+            border: none;
+            color: #fff;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .form-title{
+            color: rgb(255, 197, 216);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.95rem;
+            font-weight: 600;
+        }
+
+        .btn.custom-button{
+            background-color: rgb(254, 182, 206);
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 10px;
+            border: none;
+            font-weight: 2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease ;
+        }
+
+        .btn.custom-button:hover{
+            background-color: rgb(251, 53, 119);
+            transform: translateY(-3px);
         }
     </style>
     
@@ -40,7 +85,7 @@
      <!-- 1ª Digitação (Aqui) -->
      <div class="container mt-3">
         <form class="custom-form">
-            <h3 class="form-title">Formulario Login</h3>
+            <h3 class="form-title">Formulário Login</h3>
             <form class="mb-3">
                <label for="email" class="form-label">
                     Email
@@ -56,6 +101,7 @@
                 <label for="senha" class="form-label">
                     Senha
                </label>
+               <br>
                <div class="input-group">
                     <span class="input-group-text custom-icon">
                         <i class="bi bi-lock"></i>
@@ -64,7 +110,7 @@
                 </div> 
                 <hr> 
                 <div class="d-grid">
-                    <button class="btn">
+                    <button class="btn custom-button">
                         <i class="bi bi-arrow-right"></i> Login
                     </button>
                 </div>
