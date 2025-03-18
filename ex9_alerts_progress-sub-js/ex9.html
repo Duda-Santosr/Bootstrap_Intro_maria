@@ -28,15 +28,28 @@
 
          <!-- Alerta de Sucesso -->
           <div class="alert alert-success alert-dismissible fade" id="successAlert">
-            <p><strong>Parabéns!</strong> Alerta realizado com sucesso.</p>
+            <p><strong><i class="bi bi-check-all"></i> Parabéns!</strong> Alerta realizado com sucesso.</p>
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
           </div>
 
           <!-- Alerta de Erro -->
           <div class="alert alert-danger alert-dismissible fade" id="errorAlert">
-            <p><i class="bi bi-check-all"></i><strong>Erro!</strong> Alerta não realizado.</p>
+            <p><strong><i class="bi bi-x"></i> Erro!</strong> Alerta não realizado.</p>
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
           </div>
+
+          <!-- Toast -->
+           <div class="position-fixed top-0 end-0 p-3">
+            <div class="toast" id="liveToast" aria-live="assertive" aria-atomic="true" role="alert">
+                <div class="toast-header">
+                    <h3>Notificação <i class="bi bi-bell-fill"></i></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    <p>Aprendendo Bootstrap <i class="bi bi-pencil"></i></p>
+                </div>
+            </div>
+           </div>
 
      </div>
 
