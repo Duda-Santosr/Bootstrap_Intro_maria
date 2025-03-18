@@ -16,6 +16,7 @@
 * 6- Barras de Navegação com Bootstrap;
 * 7- Modal com Bootstrap;
 * 8- Carrossel com Bootstrap;
+* 9- Alerts e Progress Bar Interativos com Bootstrap;
 
 
 
